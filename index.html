@@ -69,23 +69,33 @@
             new Chart(document.getElementById("myChart"), {
                 type: "bar",
                 data: {
-                    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+                    labels: ["Pablo Domínguez G.", "Mauricio Vico S.", "Antonio Marín P.", "Pamela Gatica R.", "Eduardo Castillo E."],
                     datasets: [
                         {
-                            label: "# of Votes",
-                            data: [12, 19, 3, 5, 2, 3],
+                            label: "Aprobados",
+                            data: [43, 4, 6, 9, 19],
+                            borderWidth: 1,
+                        },
+                        {
+                            label: "No Aprobados",
+                            data: [29, 3, 5, 8, 17],
                             borderWidth: 1,
                         },
                     ],
                 },
                 options: {
                     scales: {
+                        x: {
+                            stacked: true
+                        },
                         y: {
                             beginAtZero: true,
+                            stacked: true
                         },
                     },
                 },
             });
         </script>
     </body>
+    
 </html>
